@@ -35,6 +35,7 @@ body {
 .header {
     height: 40px;
     width: 100%;
+    position: relative;
     > nav {
         height: 100%;
         display: flex;
@@ -420,16 +421,83 @@ body {
 }
 
 /* =============================
+   PRINT BUTTON
+   ============================= */
+.print-btn {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 0.25rem 0.75rem;
+    font-family: var(--font);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text);
+    cursor: pointer;
+    letter-spacing: 0.04em;
+    transition: border-color 0.15s, color 0.15s;
+}
+.print-btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+/* =============================
    PRINT STYLES
    ============================= */
 @media print {
-    body {
-        background: none;
-        padding: 0;
+    @page {
+        size: A4;
+        margin: 0.6cm 0.8cm;
     }
+
+    html {
+        font-size: 12px;
+    }
+
+    body {
+        background: white;
+        padding: 0;
+        margin: 0;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    /* Hide non-CV chrome */
+    .header,
+    .print-btn {
+        display: none !important;
+    }
+
+    .wrapper {
+        padding: 0;
+        display: block;
+    }
+
     .cv-page {
         box-shadow: none;
         max-width: 100%;
+        width: 100%;
+    }
+
+    /* Keep each job/edu entry together on a page when possible */
+    .timeline-item {
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+
+    /* Keep section headings with the content that follows */
+    .main-section__heading {
+        page-break-after: avoid;
+        break-after: avoid;
+    }
+
+    /* Ensure links print as readable text */
+    a[href]::after {
+        content: none;
     }
 }
 

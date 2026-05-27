@@ -22,13 +22,20 @@ const CV_DATA = {
     Cloud: ["Microsoft Azure", "AWS", "GCP", "Vercel", "Databricks", "Railway"],
     DB: ["MySQL", "PostgreSQL", "MongoDB"],
     CMS: ["Contentful", "Sanity", "Enonic"],
-    "DevOps & Data": ["DevOps", "CI/CD", "ETL", "Microsoft Power BI"],
+    "DevOps & Data": [
+      "Git",
+      "GitHub",
+      "DevOps",
+      "CI/CD",
+      "ETL",
+      "Microsoft Power BI",
+    ],
     Methodologies: ["Scrum"],
   },
   profile: [
     "An experienced developer with a background in data engineering, I'm driven by a passion for innovative solutions and a strong analytical mindset. Throughout my career I've played a key role in a range of projects — from data extraction, transformation, and implementation to data visualization, quality assurance, and automation of repetitive workflows",
-    "After working primarily with ETL and data from 2018-2022, I wanted to explore something new — moving to NoA Ignite marked a deliberate shift into web development and more traditional software engineering. As a full-stack consultant at SiO, I've primarily been developing new features for their website, built on Next.js, and adding new content types in their CMS. I've also been responsible for cloud architecture, databases, APIs, DevOps, CI/CD, code design, and building an internal npm package for UI components",
-    "I'm a productive and curious developer with several personal projects, because I believe that to truly understand something, you have to build it from scratch. I enjoy working across the entire stack, with particular strength in the BFF layer — building API layers, integrations, and data access that make frontend applications robust, fast, and easy to evolve. I have a strong foundation in writing code that runs on both the client and the server for web applications with modern JAMstack frameworks such as Next.js, SvelteKit, and Astro.",
+    "After working primarily with ETL and data from 2018-2022, I wanted to explore something new — moving to NoA Ignite marked a deliberate shift into web development and more traditional software engineering. As a full-stack consultant at SiO, I've primarily been developing new features for their website, built on Next.js, and design and structure content type schemas in the CMS. I've also been responsible for cloud architecture, databases, APIs, DevOps, CI/CD, code design, and building an internal npm package for UI components.  I enjoy working across the entire stack, with particular strength in the BFF layer — building API layers, integrations, and data access that make frontend applications robust, fast, and easy to evolve. I have a strong foundation in writing code that runs on both the client and the server.",
+    "I'm a productive and curious developer with several personal projects, because I believe that to truly understand something, you have to build it from scratch. I enjoy the challenge of optimizing performance and user experience across the stack. I thrive in team environments where I can share knowledge, discuss and learn from others.",
   ],
   employment: [
     {
@@ -42,10 +49,11 @@ const CV_DATA = {
           project:
             "External client project — Full stack developer — New SiO.no",
           bullets: [
-            "Work with the JAMstack modern framework NextJS",
+            "Develop new features for the SiO website and model content types within the CMS.",
             "Back-end tasks — retrieving data, setting up Next API endpoints and DTO mapping",
             "Front-end tasks — Implement frontend components — HTML/CSS",
-            "Setting up and improving the continuous integration and deployment through automated pipelines in Azure DevOps",
+            "CI/CD and DevOps — setting up pipelines in Azure DevOps",
+            "Help SiO setup an npm account and build & publish an internal package for UI components",
           ],
         },
       ],
@@ -96,6 +104,12 @@ const CV_DATA = {
     },
   ],
   education: [
+    {
+      degree:
+        "Introduction to operating systems and data communication & Introduction to Computer Technology",
+      institution: "University of Oslo",
+      period: "August 2024 — June 2025",
+    },
     {
       degree: "LeWagon Web Development Bootcamp",
       institution: "Online",
