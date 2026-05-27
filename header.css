@@ -1,0 +1,10 @@
+.header {
+    background: #1f1f1f;
+
+    & a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 15px;
+        display: inline-block;
+    }
+}
