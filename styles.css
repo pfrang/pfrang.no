@@ -1,0 +1,457 @@
+/* =============================
+   RESET & BASE
+   ============================= */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg: #ffffff;
+    --text: #1f1f1f;
+    --muted: #888888;
+    --accent: #c97d4a; /* warm amber — dates & sidebar labels */
+    --border: #e2e2e2;
+    --timeline: #d0d0d0;
+    --page-bg: #f5f2ef;
+    --font: "Raleway", "Inter", "Segoe UI", sans-serif;
+    --sidebar-w: 228px;
+}
+
+html {
+    font-size: 13.5px;
+    font-family: var(--font);
+    color: var(--text);
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.header {
+    height: 40px;
+    width: 100%;
+    > nav {
+        height: 100%;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* =============================
+   PAGE WRAPPER
+   ============================= */
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem 1rem;
+}
+.cv-page {
+    width: 100%;
+    max-width: 900px;
+    background: var(--bg);
+    box-shadow: 0 4px 32px rgba(0, 0, 0, 0.12);
+    display: grid;
+    grid-template-columns: var(--sidebar-w) 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+/* =============================
+   HEADER (full-width)
+   ============================= */
+.cv-header {
+    grid-column: 1 / -1;
+    background: var(--bg);
+    padding: 2rem 2rem 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.cv-header__photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #e6e0d8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.7rem;
+    flex-shrink: 0;
+}
+
+.cv-header__photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cv-header__initials {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #a89880;
+    letter-spacing: 0.05em;
+}
+
+.cv-header__name {
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--text);
+    line-height: 1;
+}
+
+.cv-header__meta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text);
+    margin-top: 0.35rem;
+    gap: 0;
+}
+
+.cv-header__meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    white-space: nowrap;
+}
+
+.cv-header__meta-sep {
+    display: inline-block;
+    margin: 0 0.8rem;
+    color: var(--border);
+    font-size: 0.75rem;
+}
+
+/* =============================
+   SIDEBAR
+   ============================= */
+.cv-sidebar {
+    background: var(--bg);
+    padding: 2rem 1.6rem;
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sidebar-section__heading {
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--text);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.55rem;
+    margin-bottom: 0.9rem;
+}
+
+.sidebar-section__heading::before,
+.sidebar-section__heading::after {
+    content: "◦";
+    font-size: 0.65rem;
+    color: var(--text);
+}
+
+/* DETAILS */
+.details-list {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.details-list li {
+    font-size: 0.82rem;
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.details-list li.detail-label {
+    font-size: 0.7rem;
+    color: var(--accent);
+    margin-top: 0.65rem;
+    font-weight: 500;
+}
+
+.details-list a {
+    color: var(--text);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+/* LINKS */
+.links-list {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+}
+
+.links-list a {
+    color: var(--text);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    font-size: 0.84rem;
+    font-weight: 500;
+}
+
+.links-list a:hover {
+    color: var(--accent);
+}
+
+/* SKILLS */
+.skills-group {
+    margin-bottom: 1rem;
+}
+
+.skills-group:last-child {
+    margin-bottom: 0;
+}
+
+.skills-group__heading {
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--accent);
+    text-align: center;
+    margin-bottom: 0.3rem;
+}
+
+.skills-list {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.skills-list li {
+    font-size: 0.84rem;
+    color: var(--text);
+}
+
+/* =============================
+   MAIN CONTENT
+   ============================= */
+.cv-main {
+    padding: 2rem 2.2rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.2rem;
+}
+
+/* Section headings */
+.main-section__heading {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.4rem;
+    margin-bottom: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+}
+
+.section-icon {
+    font-size: 0.9rem;
+    line-height: 1;
+    opacity: 0.85;
+    flex-shrink: 0;
+}
+
+/* PROFILE */
+.profile-text {
+    font-size: 0.875rem;
+    line-height: 1.75;
+    color: var(--text);
+    font-weight: 600;
+    padding-left: 1.1rem;
+    border-left: 2.5px solid var(--border);
+}
+
+/* =============================
+   TIMELINE
+   ============================= */
+.timeline {
+    position: relative;
+    padding-left: 1.3rem;
+}
+
+/* vertical connecting line */
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 0.22rem;
+    top: 0.55rem;
+    bottom: 0.6rem;
+    width: 1px;
+    background: var(--timeline);
+}
+
+.timeline-item {
+    position: relative;
+    padding-bottom: 1.6rem;
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+/* diamond dot */
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -1.08rem;
+    top: 0.36rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    background: var(--bg);
+    border: 1.5px solid var(--timeline);
+    transform: rotate(45deg);
+}
+
+/* JOB */
+.job__title-line {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.35;
+}
+
+.job__period {
+    font-size: 0.78rem;
+    color: var(--accent);
+    margin-top: 0.12rem;
+    margin-bottom: 0.55rem;
+}
+
+.job__description {
+    font-size: 0.84rem;
+    line-height: 1.65;
+    color: var(--text);
+    margin-bottom: 0.55rem;
+}
+
+.job__highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.highlight__project {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 0.4rem;
+}
+
+.highlight__bullets {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.highlight__bullets li {
+    font-size: 0.84rem;
+    line-height: 1.55;
+    color: var(--text);
+    padding-left: 1rem;
+    position: relative;
+}
+
+.highlight__bullets li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--text);
+}
+
+/* EDUCATION */
+.edu-item__title-line {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.edu-item__period {
+    font-size: 0.78rem;
+    color: var(--accent);
+    margin-top: 0.12rem;
+}
+
+/* =============================
+   LOADING / ERROR STATE
+   ============================= */
+.loading {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 4rem;
+    color: var(--muted);
+    font-size: 1rem;
+}
+
+/* =============================
+   PRINT STYLES
+   ============================= */
+@media print {
+    body {
+        background: none;
+        padding: 0;
+    }
+    .cv-page {
+        box-shadow: none;
+        max-width: 100%;
+    }
+}
+
+/* =============================
+   RESPONSIVE (narrow screens)
+   ============================= */
+@media (max-width: 640px) {
+    .cv-page {
+        grid-template-columns: 1fr;
+    }
+    .cv-sidebar {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+    }
+    .cv-main {
+        padding: 1.5rem;
+    }
+    .cv-header__meta {
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+    .cv-header__meta-sep {
+        display: none;
+    }
+}
