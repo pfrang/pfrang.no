@@ -1,10 +1,51 @@
 .header {
-    background: #1f1f1f;
-
-    & a {
-        color: #fff;
-        text-decoration: none;
-        padding: 10px 15px;
-        display: inline-block;
+    border-bottom: 1px solid var(--border);
+    & nav {
+        display: flex;
+        align-items: center;
     }
+    & a,
+    & nav p {
+        display: inline-block;
+        margin: 0;
+    }
+    & a {
+        text-decoration: underline;
+        &:hover {
+            background: var(--bg);
+            color: var(--text);
+            text-decoration: none;
+        }
+    }
+    & nav p {
+        text-decoration: none;
+    }
+}
+
+/* =============================
+   PRINT BUTTON
+   ============================= */
+.print-btn {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 0.25rem 0.75rem;
+    font-family: var(--font);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text);
+    cursor: pointer;
+    letter-spacing: 0.04em;
+    transition:
+        border-color 0.15s,
+        color 0.15s;
+}
+
+.print-btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
 }

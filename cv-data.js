@@ -94,14 +94,6 @@ const CV_DATA = {
         },
       ],
     },
-    {
-      role: "Data Analytics Associate",
-      company: "EY",
-      location: "Oslo",
-      period: "August 2018 — August 2021",
-      description: null,
-      highlights: [],
-    },
   ],
   education: [
     {

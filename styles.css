@@ -326,12 +326,12 @@ body {
     padding-bottom: 0;
 }
 
-/* diamond dot */
+/* diamond dot — left/top center the diamond on the vertical line and the title's cap-height */
 .timeline-item::before {
     content: "";
     position: absolute;
-    left: -1.08rem;
-    top: 0.36rem;
+    left: -1.33rem;
+    top: 0.4rem;
     width: 0.5rem;
     height: 0.5rem;
     background: var(--bg);
@@ -419,32 +419,6 @@ body {
     color: var(--muted);
     font-size: 1rem;
 }
-
-/* =============================
-   PRINT BUTTON
-   ============================= */
-.print-btn {
-    position: absolute;
-    right: 1rem;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    padding: 0.25rem 0.75rem;
-    font-family: var(--font);
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: var(--text);
-    cursor: pointer;
-    letter-spacing: 0.04em;
-    transition: border-color 0.15s, color 0.15s;
-}
-.print-btn:hover {
-    border-color: var(--accent);
-    color: var(--accent);
-}
-
 /* =============================
    PRINT STYLES
    ============================= */
