@@ -18,11 +18,18 @@ const CV_DATA = {
   ],
   skills: {
     Languages: ["JavaScript", "Typescript", "Python", "SQL", "Ruby", "C", "Go"],
-    "Frameworks & Libraries": ["Next.js", "React", "SvelteKit", "Astro"],
+    "Frameworks & Libraries": [
+      "GraphQL",
+      "Next.js",
+      "React",
+      "SvelteKit",
+      "Astro",
+    ],
     Cloud: ["Microsoft Azure", "AWS", "GCP", "Vercel", "Databricks", "Railway"],
-    DB: ["MySQL", "PostgreSQL", "MongoDB"],
+    DB: ["ORMs", "MySQL", "PostgreSQL", "MongoDB"],
     CMS: ["Contentful", "Sanity", "Enonic"],
     "DevOps & Data": [
+      "Docker",
       "Git",
       "GitHub",
       "DevOps",
@@ -34,7 +41,7 @@ const CV_DATA = {
   },
   profile: [
     "An experienced developer with a background in data engineering, I'm driven by a passion for innovative solutions and a strong analytical mindset. Throughout my career I've played a key role in a range of projects — from data extraction, transformation, and implementation to data visualization, quality assurance, and automation of repetitive workflows",
-    "After working primarily with ETL and data from 2018-2022, I wanted to explore something new — moving to NoA Ignite marked a deliberate shift into web development and more traditional software engineering. As a full-stack consultant at SiO, I've primarily been developing new features for their website, built on Next.js, and design and structure content type schemas in the CMS. I've also been responsible for cloud architecture, databases, APIs, DevOps, CI/CD, code design, and building an internal npm package for UI components.  I enjoy working across the entire stack, with particular strength in the BFF layer — building API layers, integrations, and data access that make frontend applications robust, fast, and easy to evolve. I have a strong foundation in writing code that runs on both the client and the server.",
+    "After working primarily with ETL and data from 2018-2022, I wanted to explore something new — moving to NoA Ignite marked a deliberate shift into web development and more traditional software engineering. As a full-stack consultant at SiO, I've primarily been developing new features for their website, built on Next.js, and design and structure content type schemas in the CMS. I've also been responsible for cloud architecture, databases, APIs, DevOps, CI/CD, code design, and building an internal npm package for UI components. I enjoy working across the entire stack, with particular strength in the BFF layer — building API layers, integrations, and data access that make frontend applications robust, fast, and easy to evolve. I have a strong foundation in writing code that runs on both the client and the server.",
     "I'm a productive and curious developer with several personal projects, because I believe that to truly understand something, you have to build it from scratch. I enjoy the challenge of optimizing performance and user experience across the stack. I thrive in team environments where I can share knowledge, discuss and learn from others.",
   ],
   employment: [
