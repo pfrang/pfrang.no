@@ -40,13 +40,13 @@ const CV_DATA = {
     Methodologies: ["Scrum"],
   },
   profile: [
-    "An experienced developer with a background in data engineering, I'm driven by a passion for innovative solutions and a strong analytical mindset. Throughout my career I've played a key role in a range of projects — from data extraction, transformation, and implementation to data visualization, quality assurance, and automation of repetitive workflows",
-    "After working primarily with ETL and data from 2018-2022, I wanted to explore something new — moving to NoA Ignite marked a deliberate shift into web development and more traditional software engineering. As a full-stack consultant at SiO, I've primarily been developing new features for their website, built on Next.js, and design and structure content type schemas in the CMS. I've also been responsible for cloud architecture, databases, APIs, DevOps, CI/CD, code design, and building an internal npm package for UI components. I enjoy working across the entire stack, with particular strength in the BFF layer — building API layers, integrations, and data access that make frontend applications robust, fast, and easy to evolve. I have a strong foundation in writing code that runs on both the client and the server.",
-    "I'm a productive and curious developer with several personal projects, because I believe that to truly understand something, you have to build it from scratch. I enjoy the challenge of optimizing performance and user experience across the stack. I thrive in team environments where I can share knowledge, discuss and learn from others.",
+    "Full-stack developer at NoA Ignite with a background in data engineering. I like working on new and innovative solutions, and I enjoy being part of the whole stack, because I like following a feature from end to end, all the way from the database to the end user. I especially like optimizing, whether that's a slow query, a bottleneck in the infrastructure or a slow page load.",
+    "Since 2022 I've been a consultant for SiO, where I build new features for their Next.js website, set up the content models in the CMS, and work on the cloud setup, databases, APIs and CI/CD pipelines. My main focus has been designing and implementing the APIs and integrations between the frontend and the backend. I also built an internal npm package for their UI components. Before that I spent four years working with data at EY and Avanade, building ETL pipelines, reports and automating repetitive tasks.",
+    "Outside of work I usually have a side project going, because building something from scratch is the best way for me to learn. I've also studied on the side while working full time: first a web development bootcamp, and later a year at the University of Oslo, taking one course each semester on operating systems, networking and computer architecture. I learn a lot from the people around me too, so I work best in teams where people share what they know and aren't afraid to discuss different solutions.",
   ],
   employment: [
     {
-      role: "Data Engineer",
+      role: "Developer",
       company: "NoA Ignite",
       location: "Oslo",
       period: "March 2022 — Present",
@@ -58,7 +58,7 @@ const CV_DATA = {
           bullets: [
             "Develop new features for the SiO website and model content types within the CMS.",
             "Back-end tasks — retrieving data, setting up Next API endpoints and DTO mapping",
-            "Front-end tasks — Implement frontend components — HTML/CSS",
+            "Front-end tasks — Implement frontend components — React/HTML/CSS",
             "CI/CD and DevOps — setting up pipelines in Azure DevOps",
             "Help SiO setup an npm account and build & publish an internal package for UI components",
           ],
